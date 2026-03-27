@@ -4,10 +4,10 @@ import { styles, colors } from '../theme/globalStyles';
 import { supabase } from '../../supabase';
 
 export const TimelineItem = ({ item, onPress }: any) => {
-  // Obtenemos la URL pública de la foto guardada en Supabase
+  // Obtenemos la URL pública de la foto guardada en Supabase o usamos una imagen de reemplazo limpia
   const urlFoto = item.ruta_foto 
     ? supabase.storage.from('fotos_comida').getPublicUrl(item.ruta_foto).data.publicUrl 
-    : '[https://via.placeholder.com/150/E5E7EB/9CA3AF?text=](https://via.placeholder.com/150/E5E7EB/9CA3AF?text=)🍽️';
+    : '[https://via.placeholder.com/150/E5E7EB/9CA3AF?text=Comida](https://via.placeholder.com/150/E5E7EB/9CA3AF?text=Comida)';
     
   const hora = new Date(item.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 

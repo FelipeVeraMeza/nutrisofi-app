@@ -100,7 +100,7 @@ export const styles = StyleSheet.create({
   captureButton: { width: 76, height: 76, borderRadius: 38, backgroundColor: 'rgba(255, 255, 255, 0.4)', justifyContent: 'center', alignItems: 'center' },
   captureInnerButton: { width: 62, height: 62, borderRadius: 31, backgroundColor: 'white' },
 
-  // RESULTADOS IA
+  // RESULTADOS IA Y MODALES DE EDICIÓN
   previewImageMini: { width: '100%', height: 250, borderRadius: 24, resizeMode: 'cover', marginBottom: 25 },
   itemResultadoLight: { backgroundColor: colors.card, borderRadius: 20, padding: 20, marginBottom: 12, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', shadowColor: '#000', shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.03, shadowRadius: 10, elevation: 1 },
   totalBoxLight: { backgroundColor: colors.text, padding: 25, borderRadius: 24, alignItems: 'center', marginVertical: 25, shadowColor: '#000', shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.2, shadowRadius: 15, elevation: 5 },
@@ -108,6 +108,10 @@ export const styles = StyleSheet.create({
   // PERFIL
   labelPerfil: { fontSize: 14, fontWeight: '700', color: colors.textLight, marginBottom: 8, marginTop: 15 },
   inputPerfil: { backgroundColor: colors.card, borderRadius: 16, padding: 16, fontSize: 16, fontWeight: '600', color: colors.text, shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.02, shadowRadius: 5, elevation: 1 },
+
+  // ESTILOS EXTRA DE BOTONES
+  botonCantidad: { backgroundColor: colors.background, width: 48, height: 48, borderRadius: 24, justifyContent: 'center', alignItems: 'center' },
+  textoBotonCantidad: { color: colors.text, fontSize: 24, fontWeight: '900' },
 
   // MODAL DETALLE DE COMIDA (NUEVO)
   modalDetalleContenedor: { width: '100%', backgroundColor: colors.card, borderTopLeftRadius: 40, borderTopRightRadius: 40, padding: 30, elevation: 20 },
